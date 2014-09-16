@@ -1,0 +1,23 @@
+---
+allow_duplicates: no
+
+dependencies:
+  - { role: andyceo.preconf }
+  - { role: andyceo.git }
+  - { role: andyceo.php }
+  - { role: andyceo.composer }
+
+galaxy_info:
+  author: andyceo
+  description: Drush - the Drupal shell. Useful tool for managing drupal sites over console.
+  license: "license (BSD, MIT)"
+  min_ansible_version: 1.5
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+  categories:
+    - development
+    - packaging
+    - web
+    - system
