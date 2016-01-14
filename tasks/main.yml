@@ -11,6 +11,8 @@
 - name: Install/Update Drush components (now with composer)
   shell:
     cd /usr/local/share/drush/ && composer install
+  register: drush_update
+  changed_when: "'Downloading' in drush_update.stdout"
   sudo: yes
 
 - name: Create symlink to the latest drush
